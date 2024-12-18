@@ -1,0 +1,58 @@
+.add-button{
+    margin-top: 20px;
+    width: 148px;
+    height: 40px;
+    border-radius: 8px;
+    
+    border: none;
+    background-color: #4e75ff;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    
+    transition: background-color 250ms linear, box-shadow250ms linear, transform 250ms linear;
+}
+
+.add-button:hover{
+    background-color: #12309d;;
+    box-shadow: -2px -5px 62px -12px rgb(248, 248, 248);
+    transform: scale(1.1);
+}
+
+.destroy-button{
+
+    margin-top: 20px;
+    width: 148px;
+    height: 40px;
+    border-radius: 8px;
+
+    border: none;
+    background-color: #ff4e4e;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+
+    transition: background-color 250ms linear, box-shadow 250ms linear, transform 250ms linear;
+}
+
+.destroy-button:hover{
+    background-color: #be0d0d;;
+    box-shadow: -2px -5px 62px -12px rgb(248, 248, 248);
+    transform: scale(1.1);
+}
+
+.input-number{
+    border: none;
+    outline: none;
+
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+}

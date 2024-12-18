@@ -1,0 +1,36 @@
+.widget{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #fff;
+    width: 345px;
+    height: 280px;
+    border-radius: 8px;
+}
+
+button{
+    display: block;
+    margin-top: 20px;
+    width: 148px;
+    height: 40px;
+    border-radius: 8px;
+
+    border: none;
+    background-color: #4e75ff;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+
+    transition: background-color 250ms linear, box-shadow 250ms linear, transform 250ms linear;
+}
+
+button:hover{
+    background-color: #000301;
+    box-shadow: -2px -5px 62px -12px rgb(248, 248, 248);
+    transform: scale(1.1);
+}
