@@ -53,9 +53,12 @@ body {
 
 /* -------------------------- GALLERY STYLES  -------------------------- */
 body{
+  background: #FBE9D0;
+  
   height: 800px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -68,13 +71,28 @@ body{
   gap: 24px;
 }
 
-.gallery-item{
-
+.page-title {
+  animation: neonAnim 2s alternate-reverse infinite;
+  color: #874F41;
+  font-family: Garamond;
+  font-size: 57px;
 }
 
-.gallery-link{
-
+@keyframes neonAnim {
+  from {
+    text-shadow:
+      0 0 37px rgba(135, 79, 65, .7),
+      0 0 67px rgba(135, 79, 65, .7),
+      0 0 127px rgba(135, 79, 65, .7);
+  }
+  to {
+    text-shadow:
+      0 0 32px rgba(135, 79, 65, .7),
+      0 0 47px rgba(135, 79, 65, .7),
+      0 0 87px rgba(135, 79, 65, .7);
+  }
 }
+
 
 .gallery-image{
   width: 360px;

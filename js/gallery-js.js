@@ -1,3 +1,5 @@
+
+
 //TODO: Завдання — Галерея зображень
 //? Створи галерею з можливістю кліку по її елементах і перегляду повнорозмірного зображення в модальному вікні.
 
@@ -92,9 +94,17 @@ galleryList.innerHTML = (galleryItemsTemplate);
 
 //* Add event listeners to elements for receiving link of image
 galleryList.addEventListener('click', event => {
+    event.preventDefault();
+
     if(event.target.classList.contains('gallery')){
         return;
     }
+
+    const instance = basicLightbox.create(`
+        <img src="${event.target.dataset.source}" width="800" height="600">
+    `)
+    
+    instance.show()
 
     console.log(`${event.target.alt} link: ${event.target.dataset.source}`);
 });
